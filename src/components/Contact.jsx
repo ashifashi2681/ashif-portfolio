@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 function Contact() {
 	return (
-		<div className="container my-10 md:my-8">
+		<div className="container my-10 md:my-8 overflow-hidden">
 			<div className="flex md:flex-col-reverse gap-10">
-				<div className="flex-1">
+				<div className="flex-1" data-aos="fade-right">
 					<form>
 						<div className="relative my-4">
 							<input
@@ -68,7 +68,7 @@ function Contact() {
 					</form>
 				</div>
 
-				<div className="flex-1">
+				<div className="flex-1" data-aos="fade-left">
 					<h2 className="text-fs-xxl font-[700] leading-tight mb-5">
 						Let's{" "}
 						<span className="text-stroke-3 text-white">talk</span>{" "}
