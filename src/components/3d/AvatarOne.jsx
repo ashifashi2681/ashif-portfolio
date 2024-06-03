@@ -22,18 +22,21 @@ function AvatarOne({name}) {
     
 	return (
 		<Canvas
-        shadows
-        camera={{
-          position: [1, 1.8, 5],fov: 20,}}
-        >
+			shadows
+			camera={{
+				position: [1, 1.8, 5],
+				fov: 20,
+			}}
+			className="canvas">
 			<Suspense fallback={null}>
-				<Model name={name}/>
+				<Model name={name} />
 				<Environment preset="sunset" />
 			</Suspense>
 			<OrbitControls
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-            enableZoom={false} />
+				maxPolarAngle={Math.PI / 2}
+				minPolarAngle={Math.PI / 2}
+				enableZoom={false}
+			/>
 		</Canvas>
 	);
 }

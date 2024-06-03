@@ -9,8 +9,20 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
 	return (
-		<div className="bg-[#272727] rounded-t-3xl">
-			<div className=" w-[90%] max-w-[1300px] mx-auto pb-12">
+		<div className="bg-black text-white">
+				<div className="container flex justify-end items-center h-16">
+					<p>@2024 Personal</p>
+				</div>
+		</div>
+	);
+}
+
+export default Footer;
+
+
+/* 
+
+<div className=" w-[90%] max-w-[1300px] mx-auto pb-12">
 				<div className="flex md:flex-col gap-2 items-center justify-between border-b-2 border-[#475467] py-8">
 					<p className="text-fs-xxl font-[600] text-white">
 						Lets Connect there
@@ -109,8 +121,5 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-		</div>
-	);
-}
 
-export default Footer;
+*/
