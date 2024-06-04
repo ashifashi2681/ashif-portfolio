@@ -9,11 +9,11 @@ export const projects = [
 	},
 	{
 		id: "02",
-		title: "Movie App",
+		title: "Food Recipes App",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
 		img: "./images/food-delivery.png",
-		link: "",
+		link: "https://ashifashi2681.github.io/food-recipe/",
 	},
 	{
 		id: "03",

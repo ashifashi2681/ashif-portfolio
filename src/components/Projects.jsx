@@ -34,7 +34,7 @@ function Projects() {
 									{project.description}
 								</p>
 								<span className=" text-fs-md md:text-fs-lg w-fit block">
-									<NavLink to={project.link}>
+									<NavLink to={project.link} target="_blank">
 										<HiOutlineExternalLink />
 									</NavLink>
 								</span>
