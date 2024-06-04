@@ -12,7 +12,7 @@ export const projects = [
 		title: "Movie App",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
-		img: "https://strapi.dhiwise.com/uploads/jusplay_movie_streaming_app_flutter_2_3dfd9cbbfc.jpg",
+		img: "./images/food-delivery.png",
 		link: "",
 	},
 	{
