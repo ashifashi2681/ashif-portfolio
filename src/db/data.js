@@ -1,11 +1,11 @@
 export const projects = [
 	{
 		id: "01",
-		title: "E-commerce",
+		title: "Movie App",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
-		img: "https://www.webguru-india.com/ecommerce-mobile-app/images/bnrimg.png",
-		link: "",
+		img: "./images/movie-app.png",
+		link: "https://movieapptrial.netlify.app/",
 	},
 	{
 		id: "02",
