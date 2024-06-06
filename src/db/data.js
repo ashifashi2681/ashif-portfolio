@@ -9,19 +9,19 @@ export const projects = [
 	},
 	{
 		id: "02",
-		title: "Food Recipes App",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
-		img: "./images/food-delivery.png",
-		link: "https://ashifashi2681.github.io/food-recipe/",
-	},
-	{
-		id: "03",
 		title: "E-Commerce App",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
 		img: "https://i.pinimg.com/736x/59/a9/f0/59a9f0f47f3689cdbcbd7ecb503c92d7.jpg",
 		link: "https://toolstorrent.netlify.app/",
+	},
+	{
+		id: "03",
+		title: "Food Recipes App",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione accusantium molestias veniam accusamus ipsa dolore, doloribus sed, quae at ab natus facilis vero commodi tempore aperiam. Voluptas, non repudiandae vero dolorem eius veniam nostrum blanditiis explicabo, hic eum vel.",
+		img: "./images/food-delivery.png",
+		link: "https://ashifashi2681.github.io/food-recipe/",
 	},
 ];
 
