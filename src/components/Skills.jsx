@@ -8,6 +8,7 @@ import {
 	FaJs,
 	FaNode,
 	FaReact,
+	FaShopify,
 } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
@@ -24,62 +25,82 @@ function Skills() {
 		{
 			name: "HTML5",
 			icon: <FaHtml5 />,
+			level: "99%",
 		},
 		{
 			name: "CSS3",
 			icon: <FaCss3Alt />,
+			level: "95%",
 		},
 		{
 			name: "JavaScript",
 			icon: <FaJs />,
+			level: "50%",
 		},
 		{
 			name: "React",
 			icon: <FaReact />,
+			level: "85%",
 		},
 		{
 			name: "Node JS",
 			icon: <FaNode />,
+			level: "70%",
 		},
 		{
 			name: "Express JS",
 			icon: <SiExpress />,
+			level: "70%",
 		},
 		{
 			name: "MongoDB",
 			icon: <DiMongodb />,
+			level: "40%",
 		},
 		{
 			name: "Tailwind CSS",
 			icon: <RiTailwindCssFill />,
+			level: "95%",
 		},
 		{
 			name: "Bootstrap",
 			icon: <FaBootstrap />,
+			level: "95%",
 		},
 		{
 			name: "React Native",
 			icon: <FaReact />,
+			level: "40%",
 		},
 		{
 			name: "Figma",
 			icon: <FaFigma />,
+			level: "50%",
 		},
 		{
 			name: "Adobe PS",
 			icon: <DiPhotoshop />,
+			level: "80%",
 		},
 		{
 			name: "Blender",
 			icon: <RiBlenderLine />,
+			level: "15%",
 		},
 		{
 			name: "GitHub",
 			icon: <FaGithub />,
+			level: "30%",
+		},
+		{
+			name: "Shopify",
+			icon: <FaShopify />,
+			level: "50%",
 		},
 		{
 			name: "MS Office",
 			icon: <TbBrandOffice />,
+			level: "85%",
 		},
 	];
 
@@ -136,6 +157,7 @@ function Skills() {
 						},
 					}}
 					loop={false}
+					speed={5000}
 					autoplay={{
 						delay: 2500,
 						disableOnInteraction: false,
@@ -144,15 +166,17 @@ function Skills() {
 						rows: 2,
 						fill: "row",
 					}}
+					disableOnInteraction={false}
 					spaceBetween={40}
 					modules={[Grid, Autoplay]}
 					className="mySwiper">
 					{skills.map((skill, i) => (
 						<SwiperSlide key={i}>
-							<div className="border-2 border-black rounded aspect-square flex flex-col items-center justify-center gap-6 md:gap-4 cursor-pointer hover:bg-black hover:text-white transition">
+							<div className="border-2 border-black rounded aspect-square flex flex-col items-center justify-center gap-2 cursor-pointer hover:bg-black hover:text-white transition">
 								<span className="text-fs-xxxl">
 									{skill.icon}
 								</span>
+								<span className="text-fs-base font-[800] text-white">{skill.level}</span>
 								<span className="text-fs-base font-[700]">
 									{skill.name}
 								</span>

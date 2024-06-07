@@ -18,18 +18,19 @@ function Hero() {
 						<span className="font-[600]">India</span>
 					</h2>
 					<p className="text-fs-base text-[#71717A] leading-8 mb-10">
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Debitis ratione accusantium molestias veniam
-						accusamus ipsa dolore, doloribus sed, quae at ab natus
-						facilis vero commodi tempore aperiam. Voluptas, non
-						repudiandae vero dolorem eius veniam nostrum blanditiis
-						explicabo, hic eum vel.
+						Hey there! I'm Ashif, a frontend developer
+						passionate about crafting intuitive user interfaces.
+						Proficient in HTML, CSS, JavaScript, and a big fan of
+						React, I specialize in building dynamic and responsive
+						web applications. Eager to broaden my expertise, I'm
+						also delving into backend development, exploring
+						technologies like Node.js and Express.js. From frontend
+						design to server-side logic, I'm on a journey to become
+						a versatile full-stack engineer.
 					</p>
 				</div>
 				<div className="md:h-[50vh]">
-					<AvatarOne
-						name="avatar-anim"
-					/>
+					<AvatarOne name="avatar-anim" />
 				</div>
 			</div>
 

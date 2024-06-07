@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import { LuFacebook, LuGithub, LuInstagram, LuTwitter } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs
+			.sendForm("service_u4ee61k", "template_6l5mg6o", form.current, {
+				publicKey: "OHY0CcBnT1tjP1l3I",
+			})
+			.then(
+				() => {
+					alert("Message Send!");
+				},
+				(error) => {
+					alert("somthing wend wrong");
+				}
+			);
+
+		e.target.reset();
+	};
+
 	return (
 		<div className="container my-10 md:my-8 overflow-hidden">
 			<div className="flex md:flex-col-reverse gap-10">
 				<div className="flex-1" data-aos="fade-right">
-					<form>
+					<form ref={form} onSubmit={sendEmail}>
 						<div className="relative my-4">
 							<input
 								type="text"
 								className=" border border-solid border-[#71717A] w-full p-2 text-fs-sm rounded bg-transparent  "
 								required
+								name="user_name"
 							/>
 							<label className="absolute left-0 top-[50%] translate-y-[-50%] p-2 mx-2 text-fs-sm text-[#71717A] bg-white leading-[1px] -z-10 transition ">
 								Your Name
@@ -24,6 +46,7 @@ function Contact() {
 								type="mail"
 								className=" border border-solid border-[#71717A] w-full p-2 text-fs-sm rounded bg-transparent  "
 								required
+								name="user_email"
 							/>
 							<label className="absolute left-0 top-[50%] translate-y-[-50%] p-2 mx-2 text-fs-sm text-[#71717A] bg-white leading-[1px] -z-10 transition ">
 								Email
@@ -32,6 +55,7 @@ function Contact() {
 
 						<div className="relative my-4">
 							<textarea
+								name="message"
 								type="text"
 								rows={5}
 								placeholder="Message"
@@ -40,7 +64,10 @@ function Contact() {
 						</div>
 
 						<div className="flex items-center gap-5">
-							<button className="bg-primary text-white text-fs-sm font-[500] flex items-center gap-2 py-2 px-4 rounded cursor-pointer shine">
+							<button
+								type="submit"
+								value="Send"
+								className="bg-primary text-white text-fs-sm font-[500] flex items-center gap-2 py-2 px-4 rounded cursor-pointer shine">
 								Get In Touch
 							</button>
 
@@ -76,11 +103,13 @@ function Contact() {
 					</h2>
 
 					<p className="text-fs-base text-[#71717A]">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Cupiditate eum laborum corporis, dignissimos magni nam
-						at facere pariatur doloremque deleniti architecto error
-						veniam incidunt harum, placeat repellat temporibus
-						suscipit id?
+						Ready to turn your ideas into reality? Whether you're
+						looking to revamp your website, create a cutting-edge
+						web application, or explore the possibilities of
+						immersive 3D experiences, I'm here to bring your vision
+						to life. Let's collaborate and build something
+						extraordinary together. Drop me a message below, and
+						let's get started on your next project!
 					</p>
 				</div>
 			</div>
