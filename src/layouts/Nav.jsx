@@ -7,30 +7,40 @@ function Nav() {
 	const [active, setActive] = useState(false);
 
 	return (
-		<div className="bg-white fixed top-0 left-0 right-0 shadow-md z-50">
+		<div className="bg-white sticky top-0 bottom-0 shadow-md z-50 ">
 			<div className="container flex justify-between items-center py-4 md:py-3">
 				<div className="text-fs-lg font-[600]">
-					<NavLink to="/">brand</NavLink>
+					<a href="#">As</a>
 				</div>
 
 				<ul
 					className={`flex items-center gap-8 text-fs-base font-[600] md:absolute md:flex-col md:left-0 md:right-0 md:top-[95%] md:bg-white clip md:pb-5 md:gap-5 ${
 						active && "clip-active"
 					}`}>
-					<li className="nav-link relative">
-						<NavLink to="/skill">Skill</NavLink>
+					<li
+						onClick={() => setActive(false)}
+						className="nav-link relative">
+						<a href="#skills">Skill</a>
 					</li>
-					<li className="nav-link relative">
-						<NavLink to="/projects">Projects</NavLink>
+					<li
+						onClick={() => setActive(false)}
+						className="nav-link relative">
+						<a href="#projects">Projects</a>
 					</li>
-					<li className="nav-link relative">
-						<NavLink to="/about">About me</NavLink>
+					<li
+						onClick={() => setActive(false)}
+						className="nav-link relative">
+						<a href="#about">About me</a>
 					</li>
-					<li className="nav-link relative">
-						<NavLink to="/experience">Experience</NavLink>
+					<li
+						onClick={() => setActive(false)}
+						className="nav-link relative">
+						<a href="#experience">Experience</a>
 					</li>
-					<li className="nav-link relative">
-						<NavLink to="/contact">Contact me</NavLink>
+					<li
+						onClick={() => setActive(false)}
+						className="nav-link relative">
+						<a href="#contact">Contact me</a>
 					</li>
 				</ul>
 

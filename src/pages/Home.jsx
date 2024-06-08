@@ -10,12 +10,14 @@ import Experience from "../components/Experience";
 function Home() {
 	return (
 		<Layout>
-			<Hero />
-			<Skills/>
-			<Projects/>
-			<About />
-			<Experience/>
-			<Contact/>
+			<div className="">
+				<Hero />
+				<Skills />
+				<Projects />
+				<About />
+				<Experience />
+				<Contact />
+			</div>
 		</Layout>
 	);
 }

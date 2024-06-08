@@ -25,7 +25,7 @@ function Contact() {
 	};
 
 	return (
-		<div className="container my-10 md:my-8 overflow-hidden">
+		<div className="container my-10 md:my-8 overflow-hidden" id="contact">
 			<div className="flex md:flex-col-reverse gap-10">
 				<div className="flex-1" data-aos="fade-right">
 					<form ref={form} onSubmit={sendEmail}>

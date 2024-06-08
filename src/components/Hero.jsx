@@ -5,7 +5,7 @@ import AvatarOne from "./3d/AvatarOne";
 
 function Hero() {
 	return (
-		<div className="container mt-20 md:mt-16">
+		<div className="container" id="hero">
 			<div className="grid grid-cols-2 md:grid-cols-1">
 				<div className="">
 					<h2 className=" text-fs-xxl font-[400] mb-4">

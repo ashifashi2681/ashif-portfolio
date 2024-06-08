@@ -3,7 +3,7 @@ import AvatarOne from "./3d/AvatarOne";
 
 function About() {
 	return (
-		<div className="container my-10 md:my-8">
+		<div className="container py-20 md:py-14 my-10 md:my-8" id="about">
 			<div className="grid grid-cols-2 md:grid-cols-1">
 				<div className="">
 					<h4 className="text-fs-xl mb-6">
@@ -16,7 +16,7 @@ function About() {
 						JavaScript, I specialize in crafting dynamic web
 						applications using React.
 					</p>
-					
+
 					<p className="text-fs-base text-[#71717A] leading-8 my-2">
 						I love diving deep into React projects, utilizing state
 						management with Redux Toolkit to efficiently manage
@@ -26,7 +26,7 @@ function About() {
 						React Router DOM for seamless navigation, and React
 						Icons for scalable vector icons.
 					</p>
-					
+
 					<p className="text-fs-base text-[#71717A] leading-8 my-2">
 						Beyond traditional web development, I also have a keen
 						interest in the world of 3D graphics and interactive
@@ -35,7 +35,7 @@ function About() {
 						immersive and interactive 3D experiences right in the
 						browser.
 					</p>
-					
+
 					<p className="text-fs-base text-[#71717A] leading-8 my-2">
 						My journey into web development began with frontend
 						design, where I honed my skills in creating visually

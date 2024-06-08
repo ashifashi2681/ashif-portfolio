@@ -105,7 +105,7 @@ function Skills() {
 	];
 
 	return (
-		<div className="container my-10 md:my-8">
+		<div className="container py-20 md:py-14 my-10 md:my-8" id="skills">
 			<h4 className="text-fs-xl mb-6 text-center">
 				My <span className="font-[700]">Skills</span>
 			</h4>

@@ -6,7 +6,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 function Projects() {
 	return (
 		<div
-			className="bg-black text-white py-16 md:py-8 my-10 md:my-8 overflow-hidden"
+			className="bg-black text-white py-20 md:py-14 my-10 md:my-8 overflow-hidden" id="projects"
 			data-aos="fade-up">
 			<div className="container ">
 				<h4 className="text-fs-xl text-center">

@@ -1,9 +1,9 @@
-import React from 'react'
-import { experience } from '../db/data';
+import React from "react";
+import { experience } from "../db/data";
 
 function Experience() {
-  return (
-		<div className="bg-black my-10 md:my-8 py-16 md:py-8">
+	return (
+		<div className="bg-black my-10 md:my-8 py-20 md:py-14" id="experience">
 			<div className="container text-white">
 				<h4 className="text-fs-xl mb-6 text-center">
 					My <span className="font-[700]">Experience</span>
@@ -29,7 +29,7 @@ function Experience() {
 				</div>
 			</div>
 		</div>
-  );
+	);
 }
 
-export default Experience
+export default Experience;
