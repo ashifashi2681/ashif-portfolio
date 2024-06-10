@@ -44,12 +44,14 @@ function Nav() {
 					</li>
 				</ul>
 
-				<button className="bg-primary text-white text-fs-base font-[500] flex items-center gap-2 py-2 px-4 rounded cursor-pointer shine md:hidden">
-					Resume
-					<span className="text-fs-md">
-						<MdOutlineFileDownload />
-					</span>
-				</button>
+				<a href="./Muhammed_Ashif_Resume.pdf" download={true}>
+					<button className="bg-primary text-white text-fs-base font-[500] flex items-center gap-2 py-2 px-4 rounded cursor-pointer shine md:hidden">
+						Resume
+						<span className="text-fs-md">
+							<MdOutlineFileDownload />
+						</span>
+					</button>
+				</a>
 
 				<span
 					className="menu md:block hidden text-fs-md bg-black text-white p-2 rounded-full cursor-pointer"
